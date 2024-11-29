@@ -1,0 +1,132 @@
+body{
+    text-align: center;
+    margin: 0%;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 15px;
+}
+.section{
+    margin: 1em auto 3em auto;
+}
+
+h1{
+    font-family: 'Noto Serif', serif;
+    color: #25212b;
+    font-size: 2.2em;
+    margin: .4em;
+}
+h2{
+    font-family: 'Noto Serif', serif;
+    color: #25212b;
+}
+h3{
+    font-family: 'Montserrat', sans-serif;
+    color: #25212b;
+}
+button{
+    border: none;
+    font-size: 0.9em;
+}
+.head-container{
+    text-align: center;
+    background-image: url(head_image.jpg);
+    background-size: contain;
+    align-items: center;
+    background-repeat: no-repeat;
+    background-position: center;
+    display: flex;
+    justify-content: space-around;
+}
+.main-container{
+    width: 85%;
+}
+
+.date-container{
+    background-size: cover;
+    background-position: center;
+    background-image: url(flowers.png);  
+    padding: 5%;
+    }
+
+.date-text{
+    margin: 4em auto;
+    display: grid;
+}
+.gift{
+    width: 85%;
+    display: grid;
+}
+.sheets{
+    width: 45%;
+    margin: auto;
+}
+.sheets img{
+    width: inherit;
+    margin: auto;
+    transform: rotate(90deg);
+}
+.info-container h2, h4{
+    margin-block-start: .55em;
+    margin-block-end: .55em;
+}
+.info-container img{
+    max-width: 85%;
+}
+.info-container p{
+    max-width: 85%;
+    margin: auto;
+}
+.button-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 2.2em auto;
+}
+.button{
+    background-color: #ae9a6e;
+    width: 42%;
+    border-radius: 5px;
+    padding: 2%;
+}
+.gift-button{
+    padding: 1em;
+}
+.blue{
+    background-color: #232f3f;
+}
+.pink{
+    background-color: #e10098;
+}
+a{
+    color: #f9f8f8;
+    text-decoration: inherit;
+}
+.story{
+    justify-content: center;
+}
+
+.story img{
+    width: 85%;
+}
+.story p{
+    margin: 1em auto 3em;
+    width: 85%;
+}
+.Last{
+    margin-bottom: 3em;
+    width: 85%;
+    display: grid;
+}
+.Last button{
+    width: auto;
+    padding: .7em 2em;
+    border-style: none;
+}
+.Last div{
+    padding: .9em .2em;
+}
+footer{
+    background-color: #ae9a6e;
+    color: #f9f8f8;
+    padding: 1em;
+    margin-bottom: 0px;
+}

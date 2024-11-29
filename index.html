@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dosis:wght@200;300;600&family=Great+Vibes&family=Lora&family=Montserrat:wght@200;300&family=Noto+Serif:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>K&R</title>
+    <link rel="shortcut icon" href="icon.png">
+</head>
+<body>
+    <section class="head-container">
+        
+    </section>
+    <section class="date-container section">
+        <article class="date-text">
+            <h1>KAREN & ROGELIO</h1>
+            <h3>Nos casamos</h3>
+            <h2>21·12·2024</h2>
+        </article>
+        
+    </section>
+    
+    <section class="main-container section count">
+        <h2>
+            Bienvenido a nuestra boda
+        </h2>
+        <p>Estamos muy felices de invitarte a nuestra boda, queremos compartir 
+            contigo este momento tan especial para nosotros.
+        </p>
+        <h4>
+            <span id="days"></span>días / 
+            <span id="hours"></span>hrs / 
+            <span id="minutes"></span>min / 
+            <span id="seconds"></span>seg
+        </h4>
+    </section>
+    <section class="info-container section">
+        <img src="main_image.jpg" alt="">
+        <h2>Cuándo & Dónde </h2>
+        <h4>21·Diciembre·2024</h4>
+        <h4>19:00 horas</h4>
+        <h4>Salón Luxury Eventos </h4>
+        <p>C. Ejido 466, San Antonio, Guadalajara, Jal.</p>
+        <section class="button-container">
+            <div class="button">
+                <a href="https://maps.app.goo.gl/z7hkHDufj8poeLyV7">Ver Ubicación</a>
+            </div> 
+        </section>
+    </section>
+    
+    <section class="Last section">
+        <div>
+        <h2>
+            Confirma tu asistencia
+        </h2>
+        <p>¡Gracias por compartir este día tan especial con nosotros!</p>
+        <p>Por favor confirma tu asistencia por WhatsApp dando click en el siguiente botón:</p>
+        </div>
+        
+        <div>
+            <button class="button">
+                <a href="https://api.whatsapp.com/send?phone=3333152232">Confirmar asistencia</a>
+            </button>
+        </div>
+    </section>
+    <section class="section gift">
+        <div>
+            <h2>
+                Regalos
+            </h2>
+            <p>El mejor regalo es que estés con nosotros en este día tan especial, pero si quieres hacernos un obsequio puedes ver nuestra mesa de 
+                    regalos en Amazon o Liverpool.
+            </p>
+        </div>
+        <div class="gift-button">
+            <button class="button blue">
+                <a href="https://www.amazon.com.mx/wedding/registry/1XTLV66QR34SW">Amazon</a>
+            </button>   
+            <button class="button pink">
+                <a href="https://mesaderegalos.liverpool.com.mx/milistaderegalos/51574745">Liverpool</a>
+            </button>
+        </div>
+        
+    </section>
+    
+    <footer>Made by PerlaSC</footer>
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+    
+     
+        const DATE_TARGET = new Date('12/21/2024 19:00');
+        const SPAN_DAYS = document.querySelector('span#days');
+        const SPAN_HOURS = document.querySelector('span#hours');
+        const SPAN_MINUTES = document.querySelector('span#minutes');
+        const SPAN_SECONDS = document.querySelector('span#seconds');
+    
+        const MILLI_OF_SECOND= 1000;
+        const MILLI_OF_MINUTE = MILLI_OF_SECOND * 60;
+        const MILLI_OF_HOUR = MILLI_OF_MINUTE * 60;
+        const MILLI_OF_DAY = MILLI_OF_HOUR * 24;
+    
+        function updateCountdown(){
+            const NOW = new Date()
+            const DURATION =DATE_TARGET - NOW;
+            const REMAINING_DAYS = Math.floor(DURATION/MILLI_OF_DAY)
+            const REMAINING_HOURS = Math.floor((DURATION%MILLI_OF_DAY)/MILLI_OF_HOUR)
+            const REMAINING_MINUTES = Math.floor((DURATION%MILLI_OF_HOUR)/MILLI_OF_MINUTE)
+            const REMAINING_SECONDS = Math.floor((DURATION%MILLI_OF_MINUTE)/MILLI_OF_SECOND)
+    
+            SPAN_DAYS.textContent = REMAINING_DAYS;
+            SPAN_HOURS.textContent = REMAINING_HOURS
+            SPAN_MINUTES.textContent = REMAINING_MINUTES
+            SPAN_SECONDS.textContent = REMAINING_SECONDS
+        }
+    
+            updateCountdown();
+    
+            setInterval(updateCountdown, MILLI_OF_SECOND)
+
+    })
+    
+    </script>
+</body>
+</html>
