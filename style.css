@@ -50,6 +50,7 @@ button{
 .date-text{
     margin: 4em auto;
     display: grid;
+    width: 90%
 }
 .gift{
     width: 85%;
