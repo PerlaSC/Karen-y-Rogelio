@@ -26,16 +26,6 @@ button{
     border: none;
     font-size: 0.9em;
 }
-.head-container{
-    text-align: center;
-    background-image: url(head_image.jpg);
-    background-size: contain;
-    align-items: center;
-    background-repeat: no-repeat;
-    background-position: center;
-    display: flex;
-    justify-content: space-around;
-}
 .main-container{
     width: 85%;
 }
@@ -55,15 +45,6 @@ button{
 .gift{
     width: 85%;
     display: grid;
-}
-.sheets{
-    width: 45%;
-    margin: auto;
-}
-.sheets img{
-    width: inherit;
-    margin: auto;
-    transform: rotate(90deg);
 }
 .info-container h2, h4{
     margin-block-start: .55em;
@@ -100,17 +81,6 @@ button{
 a{
     color: #f9f8f8;
     text-decoration: inherit;
-}
-.story{
-    justify-content: center;
-}
-
-.story img{
-    width: 85%;
-}
-.story p{
-    margin: 1em auto 3em;
-    width: 85%;
 }
 .Last{
     margin-bottom: 3em;
